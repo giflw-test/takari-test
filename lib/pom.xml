@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.example</groupId>
+        <artifactId>takari-test</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>com.example.takari-test</groupId>
+    <artifactId>lib</artifactId>
+    <packaging>takari-jar</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.takari.maven.plugins</groupId>
+                <artifactId>takari-lifecycle-plugin</artifactId>
+                <version>1.13.1</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <proc>proc</proc>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
